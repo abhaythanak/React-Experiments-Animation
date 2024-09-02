@@ -4,6 +4,34 @@ html,body,#root {
 }
 
 #root {
-  position: fixed;
+  /* position: fixed; */
   background-color: black;
+}
+
+.glow-effect {
+  font-weight: 700;
+  margin: 2px;
+  color: #c92828; /* Base color */
+  text-shadow: 
+      0 0 0px #fff, 
+      0 0 10px #fff, 
+      0 0 20px #ff00ff, 
+      0 0 30px #ff00ff, 
+      0 0 40px #00ffff, 
+      0 0 50px #00ffff, 
+      0 0 60px #00ffff, 
+      0 0 70px #00ffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.glow-effect:hover {
+  text-shadow: 
+      0 0 10px #ff0000, /* Red */
+      0 0 20px #ff0000, 
+      0 0 30px #ff0000, 
+      0 0 40px #ff00ff, /* Pink */
+      0 0 70px #ff00ff, 
+      0 0 80px #00ffff, /* Cyan */
+      0 0 100px #00ffff;
+  transform: scale(1.1); /* Slightly enlarges text */
 }

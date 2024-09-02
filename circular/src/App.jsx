@@ -1,15 +1,12 @@
-import { Canvas } from '@react-three/fiber'
+import React from 'react'
 import './App.css'
-import { OrbitControls } from "@react-three/drei"
-import Cyl from './Components/circular/Cyl'
-
+import Circular from './Components/circular/Circular'
+import Apple from './Components/Apple/Apple'
 
 export default function App() {
   return (
-    <Canvas>
-      <OrbitControls/>
-      <ambientLight/>
-      <Cyl/>
-    </Canvas>
+    <>
+   <Apple/>
+    </>
   )
 }
